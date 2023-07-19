@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .container {
+      margin: 20px;
+    }
+    
+    .portfolio-item {
+      margin-bottom: 20px;
+    }
+    
+    .portfolio-item img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+    
+    /* Responsive styles */
+    @media (min-width: 768px) {
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .portfolio-item {
+        flex: 0 0 calc(33.33% - 20px);
+        margin-right: 20px;
+      }
+      
+      .portfolio-item:last-child {
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>My Portfolio</h1>
+  </header>
+  
+  <div class="container">
+    <div class="portfolio-item">
+      <img src="path/to/image1.jpg" alt="Project 1">
+      <h2>Project 1</h2>
+      <p>Description of project 1</p>
+    </div>
+    
+    <div class="portfolio-item">
+      <img src="path/to/image2.jpg" alt="Project 2">
+      <h2>Project 2</h2>
+      <p>Description of project 2</p>
+    </div>
+    
+    <div class="portfolio-item">
+      <img src="path/to/image3.jpg" alt="Project 3">
+      <h2>Project 3</h2>
+      <p>Description of project 3</p>
+    </div>
+  </div>
+  
+  <script>
+    // JavaScript code (if needed)
+  </script>
+</body>
+</html>
